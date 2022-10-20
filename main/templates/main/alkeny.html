@@ -1,0 +1,52 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Алкени{% endblock %}
+
+{% block content %}
+<div class="container marketing">
+    <div class="p-5 mb-4 bg-light rounded-3 shadow-lg">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Алкени</h1>
+        <p class="col-md-8 fs-4">Основне</p>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <div class="p-5 mb-4 bg-light rounded-3 shadow-lg paragraph-1 bigpost">
+          <h1 class="display-4 fw-bold lh-1">Що таке алкени?</h1>
+        <p><b>Алкени</b> — ненасичені вуглеводні, що мають загальну формулу CnH2n.
+            Алкени характеризує наявність подвійних зв'язків між атомами вуглецю;
+            якщо подвійних зв'язків декілька, то такі сполуки називаються полієни.
+            Алкени широко застосовуються для отримання полімерів, а також для синтезу
+            похідних: дихлороетану, етиленгліколю, ізопропілового спирту, ацетону,
+            акрилонітрилу й багатьох інших сполук, які мають велике значення.</p>
+        </div>
+      </div>
+        <img class="pre-rounded col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg center-img" src="{% static 'main/media/alken2.jpg' %}" height = 450px width = 450px >
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-8 order-md-3">
+        <div class="p-5 mb-4 bg-light rounded-3 shadow-lg paragraph-1 bigpost">
+            <h1 class="display-4 fw-bold lh-1">Фізичні властивості</h1>
+            <p>Перші три члени ряду олефінів є газами, далі йдуть рідини, що не змішуються
+                з водою; вищі олефіни — це тверді речовини. Зі збільшенням молекулярної
+                маси підвищуються температури плавлення і кипіння. Алкени нормальної будови
+                киплять при більш високій температурі, ніж їх ізомери, що мають ізобудову.
+                Температури кипіння цис-ізомерів вище, ніж транс-ізомерів, а температури
+                плавлення — навпаки, що пов'язане з більш вираженим дипольним моментом перших.</p>
+          </div>
+      </div>
+      <img class="pre-rounded col-lg-4 offset-lg-0 p-0 overflow-hidden shadow-lg center-img " src="{% static 'main/media/alken3.jpg' %}" height = 450px width = 450px >
+    </div>
+
+    <hr class="featurette-divider">
+
+</div>
+{% endblock %}

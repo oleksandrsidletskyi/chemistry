@@ -1,0 +1,74 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Органічні сполуки{% endblock %}
+
+{% block content %}
+<div class="container marketing">
+    <div class="p-5 mb-4 bg-light rounded-5 shadow-lg">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Класифікація органічних сполук</h1>
+        <p class="col-md-8 fs-4">На фото нижче структурно зображена вся класифікація органічних сполук.
+            Органічні сполуки поділяють на Вуглеводні, Азотовмісні та Оксигеномісні. <b class="non-display">*Краще переглядати на ПК*</b></p>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <img class="offset-lg-0 pre-rounded overflow-hidden shadow-lg bigimg" src="{% static 'main/media/os1.jpg' %}" width = 1300px >
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <div class="p-5 mb-4 bg-light rounded-3 shadow-lg paragraph-1 bigpost">
+          <h1 class="display-4 fw-bold lh-1">Вуглеводні сполуки</h1>
+        <p><b>Вуглеводні</b> — органічні речовини, аліфатичні, аліциклічні
+            та ароматичні сполуки, до складу молекул яких входять лише
+            атоми вуглецю і водню. Вуглеводні утворюють гомологічні ряди.
+            У природі вуглеводні зустрічаються в рідкому, твердому і газоподібному
+            стані. У розсіяному вигляді присутні в атмосфері, воді, твердих породах
+            (кероген), в концентрованому — у покладах вугілля, нафти, газу, газогідратів.
+            Залежно від будови розрізняють ациклічні вуглеводні, в молекулах яких атоми
+            утворюють лінійні або розгалужені ланцюги, та ізоциклічні (карбоциклічні),
+            молекули яких являють собою цикли (кільця) трьох і більше атомів С.</p>
+        </div>
+      </div>
+        <img class="pre-rounded col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg center-img" src="{% static 'main/media/os2.jpg' %}" height = 450px width = 450px >
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-8 order-md-3">
+        <div class="p-5 mb-4 bg-light rounded-3 shadow-lg paragraph-1 bigpost">
+            <h1 class="display-4 fw-bold lh-1">Азотовмісні сполуки</h1>
+            <p><b>Азотовмісні сполуки</b> — одні з найважливіших типів органічних
+                сполук. До їх складу входить азот. Вони містять у молекулі
+                зв'язок Карбон—Гідроген та Карбон—Нітроген. В нафті поміж
+                інших дещо в більшій кількості міститься азотовмісний
+                гетероцикл: піридин. Азот входить до складу білків,
+                нуклеїнових кислот, гему та деяких ліпідів.</p>
+          </div>
+      </div>
+      <img class="pre-rounded col-lg-4 offset-lg-0 p-0 overflow-hidden shadow-lg center-img" src="{% static 'main/media/os3.jpg' %}" height = 450px width = 450px >
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <div class="p-5 mb-4 bg-light rounded-3 shadow-lg paragraph-1 bigpost">
+          <h1 class="display-4 fw-bold lh-1">Оксигеновмісні сполуки</h1>
+        <p><b>Оксигеновмісні органічні речовини</b> — це органічні сполуки,
+            в молекулах яких крім С і Н міститься О. Оксигеновмісні органічні
+            речовини поділяються на класи – клас спиртів, клас карбонових кислот,
+            клас жирів, клас вуглеводів тощо.</p>
+        </div>
+      </div>
+        <img class="pre-rounded col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg center-img" src="{% static 'main/media/os4.jpg' %}" height = 450px width = 450px >
+    </div>
+
+    <hr class="featurette-divider">
+</div>
+{% endblock %}

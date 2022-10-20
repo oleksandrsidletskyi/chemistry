@@ -1,0 +1,57 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Алкіни{% endblock %}
+
+{% block content %}
+<div class="container marketing">
+    <div class="p-5 mb-4 bg-light rounded-3 shadow-lg">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Алкіни</h1>
+        <p class="col-md-8 fs-4">Основне</p>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <div class="p-5 mb-4 bg-light rounded-3 shadow-lg paragraph-1 bigpost">
+          <h1 class="display-4 fw-bold lh-1">Що таке алкіни?</h1>
+        <p><b>Алкіни</b> — клас ненасичених вуглеводнів аліфатичної будови,
+            що містять у своєму ланцюзі потрійний зв'язок C≡C і за своїм
+            складом відповідають загальній формулі CnH2n-2 (при n = 2 і більше).
+            За назвою першого представника цього гомологічного ряду, ацетилену,
+            алкіни також мають позначення ацетиленові вуглеводні. Окрім аліфатичних
+            алкінів утворення потрійного зв'язку можливе й у вуглеводнях циклічної
+            будови. Представники такого класу, що мають назву циклоалкіни, відповідають
+            загальній формулі CnH2n-4.</p>
+        </div>
+      </div>
+        <img class="pre-rounded col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg center-img" src="{% static 'main/media/alkin2.jpg' %}" height = 450px width = 450px >
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-8 order-md-3">
+        <div class="p-5 mb-4 bg-light rounded-3 shadow-lg paragraph-1 bigpost">
+            <h1 class="display-4 fw-bold lh-1">Фізичні властивості</h1>
+            <p>Фізичні властивості алкінів загалом подібні до аналогічних їм алкенів.
+                Найлегші алкіни — ацетилен, пропін та бут-1-ин — є безбарвними газами.
+                Наступні представники у ряді від бут-2-ину до гептадецинів (C17H32) є
+                рідинами, а вище октадец-1-ину — твердими речовинами. Температури
+                кипіння алкінів порівняно вищі від температур в алкенів. При цьому
+                вплив має будова ланцюга: алкіни з термінальним (прикінцевим) потрійним
+                зв'язком мають нижчу температуру кипіння, аніж ізомери із внутрішнім
+                потрійним зв'язком. Ця властивість дозволяє проводити розділення ізомерів
+                шляхом фракційної перегонки.</p>
+          </div>
+      </div>
+      <img class="pre-rounded col-lg-4 offset-lg-0 p-0 overflow-hidden shadow-lg center-img" src="{% static 'main/media/alkin3.jpg' %}" height = 450px width = 450px >
+    </div>
+
+    <hr class="featurette-divider">
+
+</div>
+{% endblock %}

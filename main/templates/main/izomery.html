@@ -1,0 +1,72 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Ізомери{% endblock %}
+
+{% block content %}
+<div class="container marketing">
+    <div class="p-5 mb-4 bg-light rounded-5 shadow-lg">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Ізомери</h1>
+        <p class="col-md-8 fs-4">На фото нижче структурно зображено як поділяються ізомери <b class="non-display">*Краще переглядати на ПК*</b></p>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <img class="offset-lg-0 pre-rounded overflow-hidden shadow-lg bigimg" src="{% static 'main/media/iz1.jpg' %}" width = 1300px >
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <div class="p-5 mb-4 bg-light rounded-3 shadow-lg paragraph-1 bigpost">
+          <h1 class="display-4 fw-bold lh-1">Структурні ізомери</h1>
+        <p><b>Структурні ізомери</b> — хімічні сполуки
+            однакового складу, що різняться послідовністю сполучення
+            атомів у молекулі, тобто хімічною будовою. Для опису
+            структури ациклічної органічної молекули, що може мати
+            структурні ізомери, виділяють основний ланцюг (найдовша
+            послідовність вуглецевих атомів), а решту атомів чи груп
+            (в тому числі і чисто вуглеводневі радикали) описують як
+            замісники, позначаючи атом, до якого приєднаний даний замісник
+            (початок ланцюга обирається таким чином, щоб сума номерів була
+            найменшою). Якщо до складу ланцюга входить гетероатом, то сполуку
+            описують як два чи більше органічні радикали при цьому
+            гетероатомі. Наприклад, якщо гетероатомом є оксиген, то
+            сполука є етером, естером чи ангідридом карбонової кислоти.
+            Якщо ж гетероатомом є нітроген, то сполука класифікується як
+            амін (вторинний чи третинний) (наприклад, етилметиламін чи
+            триетиламін).</p>
+        </div>
+      </div>
+        <img class="pre-rounded col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg center-img" src="{% static 'main/media/iz2.jpg' %}" height = 450px width = 450px >
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-8 order-md-3">
+        <div class="p-5 mb-4 bg-light rounded-3 shadow-lg paragraph-1 bigpost">
+            <h1 class="display-4 fw-bold lh-1">Просторова ізомерія</h1>
+            <p><b>Просторова ізомерія</b> — явище, яке полягає в
+                існуванні сполук з однаковими молекулярними формулами,
+                однаковою послідовністю сполучення атомів у молекулі,
+                але з різним розташуванням атомів у просторі. Виділяють
+                два види просторової ізомерії: оптична і геометрична.
+                <b>Оптична ізомерія.</b> У оптичної ізомерії різні фрагменти
+                молекул розташовуються по-різному щодо деякого атома,
+                тобто мають різну конфігурацію. Геометрична ізомерія.
+                <b>Геометрична (цис-транс-)</b> ізомерія властива з'єднанням,
+                що містить подвійні зв'язку (С = С, C = N і ін.), А
+                також неароматичним циклічним з'єднанням і обумовлена
+                неможливістю вільного обертання атомів навколо подвійного
+                зв'язку або в циклі.</p>
+          </div>
+      </div>
+      <img class="pre-rounded col-lg-4 offset-lg-0 p-0 overflow-hidden shadow-lg center-img" src="{% static 'main/media/iz3.jpg' %}" height = 450px width = 450px >
+    </div>
+
+    <hr class="featurette-divider">
+</div>
+{% endblock %}

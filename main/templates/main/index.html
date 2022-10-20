@@ -1,0 +1,189 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block title %}Головна сторінка{% endblock %}
+
+{% block content %}
+    <main>
+        <div id="myCarousel" class="carousel slide shadow-lg" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <img class="wide-img" src="{% static 'main/media/banner1.jpg' %}" height = 500px width = 1520px >
+
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1>Вступ до органічної хімії</h1>
+                  <p>Тицяй кнопку</p>
+                  <p><a class="btn btn-lg btn-primary" href="https://www.youtube.com/watch?v=TSex53M15rc">Дивитись</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item active">
+              <img class="wide-img" src="{% static 'main/media/banner2.jpg' %}" height = 500px width = 1520px >
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Класифікація органічних сполук</h1>
+                  <p>Тицяй кнопку</p>
+                  <p><a class="btn btn-lg btn-primary" href="https://www.youtube.com/watch?v=FUy-EJmGDf8">Дивитись</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="wide-img" src="{% static 'main/media/banner3.jpg' %}" height = 500px width = 1520px >
+              <div class="container">
+                <div class="carousel-caption text-end">
+                  <h1>Теорія будови органічних сполук</h1>
+                  <p>Тицяй кнопку</p>
+                  <p><a class="btn btn-lg btn-primary" href="https://www.youtube.com/watch?v=A4L4AoKTKgc">Дивитись</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+    <!-- Three columns of text below the carousel -->
+    <br>
+    <h1>Пропозиції:</h1>
+    <br>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="p-5 mb-4 bg-light rounded-3 shadow-lg">
+              <img class="rounded-photo" src="{% static 'main/media/alkan1.jpg' %}" height = 140px width = 140px >
+
+            <h2 class="fw-normal">Алкани</h2>
+            <p>сполуки Карбону з Гідрогеном, у молекулах яких є простий зв'язок між атомами Карбону . . . </p>
+            <p><a class="btn btn-primary" href="/alkany">Читати »</a></p>
+        </div>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <div class="p-5 mb-4 bg-light rounded-3 shadow-lg">
+            <img class="rounded-photo" src="{% static 'main/media/alken1.jpg' %}" height = 140px width = 140px >
+
+            <h2 class="fw-normal">Алкени</h2>
+            <p>сполуки Карбону з Гідрогеном, у молекулах яких є один подвійний зв'язок між атомами Карбону . . . </p>
+            <p><a class="btn btn-primary" href="/alkeny">Читати »</a></p>
+        </div>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <div class="p-5 mb-4 bg-light rounded-3 shadow-lg">
+            <img class="rounded-photo" src="{% static 'main/media/alkin1.jpg' %}" height = 140px width = 140px >
+
+            <h2 class="fw-normal">Алкіни</h2>
+            <p>сполуки Карбону з Гідрогеном, у молекулах яких є один потрійний зв'язок між атомами Карбону. . .</p>
+            <p><a class="btn btn-primary" href="/alkiny">Читати »</a></p>
+        </div>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <div class="p-5 mb-4 bg-light rounded-3 shadow-lg paragraph-1 bigpost">
+          <h1 class="display-4 fw-bold lh-1">Що таке органічна хімія?</h1>
+        <p><b>Органічна хімія</b> — один з найважливіших розділів хімії, який вивчає структуру та
+          властивості органічних сполук, вуглеводнів та їхніх похідних, займається розробленням методів синтезу,
+          досліджує реакційну здатність таких сполук. Здатність вуглецю з'єднуватися з більшістю елементів і утворювати
+          молекули різного складу і будови обумовлює різноманіття органічних сполук (до кінця XX століття їх число
+          перевищило 10 млн, зараз понад 20 млн). В органічних сполуках вуглець завжди знаходиться в збудженому стані
+          (явище переходу електронів на більш високі енергетичні рівні за розпаду заповненої комірки на нижчому
+          енергетичному рівні), коли його максимальна валентність дорівнює IV, а не II (за спокійного стану).
+          Органічні сполуки відіграють ключову роль в існуванні живих організмів.</p>
+        </div>
+      </div>
+        <img class="pre-rounded col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg center-img" src="{% static 'main/media/par1.jpg' %}" height = 450px width = 450px >
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-8 order-md-3">
+        <div class="p-5 mb-4 bg-light rounded-3 shadow-lg paragraph-1 bigpost">
+            <h1 class="display-4 fw-bold lh-1">Особливості органічних сполук</h1>
+            <p>На відміну від неорганічних речовин органічні сполуки мають ряд характерних особливостей.
+              Перш за все атоми карбону здатні сполучатися один з одним, утворюючи ланцюги і кільця, що не так типово
+              для неорганічних сполук. Це одна з причин різноманітності органічних сполук. В органічних молекулах зв’язок
+              атомів ковалентний. Тому органічні речовини звичайно є неелектролітами. Якщо іонні (неорганічні) сполуки
+              легко дисоціюють у воді на іони і реакції між ними відбуваються досить швидко, то органічні речовини,
+              що містять прості (одинарні) С—С- і С—Н- зв’язки, взаємодіють між собою дуже важко або зовсім не взаємодіють.
+              При нагріванні в межах 400—600 °С органічні сполуки повністю розкладаються і обвуглюються, а за наявності кисню
+              згоряють. Це пояснюється порівняно невеликою міцністю зв’язку між атомами карбону (355,6 кДж/моль).
+              Важливою особливістю органічних сполук є й те, що серед них значно поширене явище ізомерії</p>
+          </div>
+      </div>
+      <img class="pre-rounded col-lg-4 offset-lg-0 p-0 overflow-hidden shadow-lg center-img" src="{% static 'main/media/par2.jpg' %}" height = 450px width = 450px >
+    </div>
+
+    <hr class="featurette-divider">
+
+    <h1>Поглиблена інформація: </h1>
+    <br>
+
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+        <h1 class="display-4 fw-bold lh-1">Класифікація органічних сполук</h1>
+        <p class="lead">Органічні сполуки — клас хімічних сполук, основу яких
+          складає хімічний елемент вуглець в збудженому стані, коли його максимальна
+          валентність дорівнює IV, а не II. Окрім карбону органічні сполуки майже
+          завжди містять водень, досить часто — кисень, азот та галогени, рідше
+          фосфор, сірку та інші елементи.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+            <a href="/organic-spoluky"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Дивитись</button></a>
+        </div>
+      </div>
+      <div class="pre-rounded col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg non-img">
+          <img class="rounded-lg-3" src="{% static 'main/media/spoluka1.jpg' %}" alt="" width="400">
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+        <h1 class="display-4 fw-bold lh-1">Ізомери</h1>
+        <p class="lead">Ізомерія - існування сполук, однакових за хімічним
+          складом та молекулярною масою, але різних за будовою і властивостями.
+          Такі сполуки називають ізомерами. Залежно від характеру відмінностей у
+          будові ізомерів розрізняють структурну ізомерію та просторову ізомерію.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+            <a href="/izomery"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Дивитись</button></a>
+        </div>
+      </div>
+      <div class="pre-rounded col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg non-img">
+          <img class="pre-rounded rounded-lg-3" src="{% static 'main/media/spoluka2.jpg' %}" alt="" width="400">
+      </div>
+    </div>
+
+
+    <hr class="featurette-divider">
+    <!-- https://getbootstrap.com/docs/5.2/examples/grid/ -->
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+    </main>
+{% endblock %}
+

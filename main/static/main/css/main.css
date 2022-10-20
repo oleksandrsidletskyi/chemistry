@@ -1,0 +1,42 @@
+.rounded-photo {
+  border-radius: 50%;
+}
+
+.pre-rounded {
+  border-radius: 5%;
+}
+
+.paragraph-1 {
+  height: 450px;
+}
+
+.paragraph-2 {
+  height: 500px;
+}
+
+@media screen and (max-width: 576px) {
+  .bigimg {
+    width: 390px;
+    align: centre;
+  }
+  .bigpost{
+    height: 100%;
+  }
+  .non-img{
+    display: none;
+  }
+  .center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .wide-img{
+    width: 100%;
+  }
+  .non-display{
+    display: none;
+  }
+}
